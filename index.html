@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中华人民共和国药品监督管理机构变革发展史（1949—2025）</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+:root {
+  --red: #C0392B;
+  --dark-red: #922B21;
+  --gold: #B7950B;
+  --gold-light: #F9E79F;
+  --navy: #1A3A5C;
+  --blue: #2471A3;
+  --light-blue: #D6EAF8;
+  --gray: #F4F6F7;
+  --mid-gray: #BFC9CA;
+  --dark-gray: #424949;
+  --white: #FEFEFE;
+  --black: #1C1C1C;
+  --green: #1E8449;
+  --light-green: #D5F5E3;
+  --bg: #FAF8F5;
+  --ink: #1C1C1C;
+  --paper: #FEFCF9;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Serif SC', 'Songti SC', 'SimSun', serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.9;
+  font-size: 15px;
+}
+
+/* ── COVER ── */
+.cover {
+  background: linear-gradient(160deg, var(--dark-red) 0%, var(--red) 45%, #8B1A10 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 60px 40px;
+}
+.cover::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: repeating-linear-gradient(
+    0deg, transparent, transparent 40px,
+    rgba(255,255,255,0.03) 40px, rgba(255,255,255,0.03) 41px
+  ), repeating-linear-gradient(
+    90deg, transparent, transparent 40px,
+    rgba(255,255,255,0.03) 40px, rgba(255,255,255,0.03) 41px
+  );
+}
+.cover-emblem {
+  font-size: 80px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+  animation: fadeIn 1s ease;
+}
+.cover-title-main {
+  font-family: 'Noto Serif SC', serif;
+  font-size: clamp(32px, 6vw, 56px);
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 4px;
+  line-height: 1.3;
+  animation: slideUp 0.8s ease 0.2s both;
+}
+.cover-title-sub {
+  font-size: clamp(18px, 3vw, 26px);
+  color: var(--gold-light);
+  font-weight: 600;
+  letter-spacing: 6px;
+  margin-top: 16px;
+  text-align: center;
+  animation: slideUp 0.8s ease 0.4s both;
+}
+.cover-divider {
+  width: 120px; height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold-light), transparent);
+  margin: 28px auto;
+  animation: fadeIn 1s ease 0.6s both;
+}
+.cover-desc {
+  color: rgba(255,255,255,0.82);
+  text-align: center;
+  max-width: 640px;
+  font-size: 15px;
+  line-height: 2;
+  animation: fadeIn 1s ease 0.8s both;
+}
+.cover-badge {
+  margin-top: 40px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 4px;
+  padding: 10px 28px;
+  color: var(--gold-light);
+  font-size: 13px;
+  letter-spacing: 3px;
+  animation: fadeIn 1s ease 1s both;
+}
+@keyframes fadeIn { from{opacity:0} to{opacity:1} }
+@keyframes slideUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+
+/* ── NAV ── */
+.toc {
+  background: var(--navy);
+  padding: 48px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.toc-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.toc-title {
+  color: var(--gold-light);
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.toc-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 4px;
+  list-style: none;
+}
+.toc-links a {
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  font-size: 13px;
+  padding: 4px 12px;
+  border-radius: 2px;
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.toc-links a:hover {
+  background: var(--red);
+  border-color: var(--red);
+  color: #fff;
+}
+
+/* ── LAYOUT ── */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
+
+/* ── CHAPTER ── */
+.chapter {
+  margin: 60px 0 0;
+  border-top: 4px solid var(--red);
+  padding-top: 0;
+}
+.chapter-header {
+  background: linear-gradient(135deg, var(--red) 0%, var(--dark-red) 100%);
+  padding: 28px 40px;
+  margin: 0 -40px;
+}
+.chapter-num {
+  color: rgba(255,255,255,0.55);
+  font-size: 12px;
+  letter-spacing: 4px;
+  margin-bottom: 4px;
+}
+.chapter-title {
+  color: #fff;
+  font-size: clamp(20px, 3vw, 28px);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.section { margin-top: 44px; }
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--navy);
+  padding-left: 14px;
+  border-left: 4px solid var(--red);
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+.subsection-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--blue);
+  margin: 28px 0 12px;
+}
+
+p.body { margin-bottom: 14px; text-align: justify; color: #2C2C2C; line-height: 1.95; }
+p.body-bold span.label { color: var(--red); font-weight: 700; }
+
+ul.body-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 18px;
+}
+ul.body-list li {
+  padding: 6px 0 6px 24px;
+  position: relative;
+  color: #2C2C2C;
+  border-bottom: 1px solid #EEE;
+  line-height: 1.8;
+}
+ul.body-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 4px;
+  color: var(--red);
+  font-size: 11px;
+  top: 9px;
+}
+
+/* ── TIMELINE TABLE ── */
+.timeline-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.timeline-table thead th {
+  background: var(--navy);
+  color: #fff;
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.timeline-table tbody tr:nth-child(even) { background: var(--gray); }
+.timeline-table tbody tr:hover { background: var(--light-blue); }
+.timeline-table td {
+  padding: 11px 16px;
+  border-bottom: 1px solid #DDD;
+  vertical-align: top;
+}
+.timeline-table td:first-child { color: var(--red); font-weight: 700; white-space: nowrap; }
+.timeline-table td:nth-child(2) { color: var(--navy); font-weight: 600; }
+
+/* ── LEADER CARD ── */
+.leader-card {
+  border: 2px solid var(--red);
+  border-radius: 4px;
+  margin: 32px 0;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(192,57,43,0.12);
+}
+.leader-card-header {
+  background: linear-gradient(135deg, var(--red), var(--dark-red));
+  padding: 20px 28px;
+  color: #fff;
+}
+.leader-card-name {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+.leader-card-name::before { content: '◆ '; font-size: 18px; }
+.leader-card-body { background: var(--paper); }
+.leader-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  border-bottom: 1px solid #E8E8E8;
+}
+.leader-row:last-child { border-bottom: none; }
+.leader-label {
+  background: var(--blue);
+  color: #fff;
+  padding: 12px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.6;
+}
+.leader-value {
+  padding: 12px 18px;
+  font-size: 14px;
+  line-height: 1.85;
+  color: #2C2C2C;
+}
+.leader-value.term { background: var(--light-blue); font-weight: 600; color: var(--navy); }
+.leader-value.career-val { background: var(--gray); }
+.leader-value.contrib-val {
+  background: var(--light-green);
+}
+.leader-value.contrib-val li { margin-bottom: 6px; }
+.leader-value.contrib-val li::before { content: '• '; color: var(--green); font-weight: 700; }
+.leader-value.contrib-val ul { list-style: none; padding: 0; }
+.leader-value.note-val {
+  background: #FEF9E7;
+  color: var(--dark-red);
+  font-style: italic;
+  border-left: 3px solid var(--gold);
+}
+.leader-label.contrib-lbl { background: var(--dark-red); }
+.leader-label.note-lbl { background: var(--gold); color: var(--black); }
+.leader-label.career-lbl { background: #1A5276; }
+
+/* ── EVENT CARD ── */
+.event-card {
+  background: var(--paper);
+  border-left: 5px solid var(--navy);
+  padding: 20px 24px;
+  margin: 18px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.event-card.red { border-left-color: var(--red); }
+.event-card.gold { border-left-color: var(--gold); }
+.event-card.green { border-left-color: var(--green); }
+.event-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.event-card.red .event-title { color: var(--red); }
+
+/* ── HR ── */
+.rule { border: none; border-top: 2px solid var(--red); margin: 36px 0; }
+.rule-thin { border: none; border-top: 1px solid #DDD; margin: 20px 0; }
+
+/* ── FOOTER ── */
+.footer {
+  background: var(--navy);
+  color: rgba(255,255,255,0.6);
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 80px;
+  font-size: 13px;
+  line-height: 2;
+}
+.footer strong { color: var(--gold-light); }
+
+/* ── HIGHLIGHT BOX ── */
+.highlight-box {
+  background: linear-gradient(135deg, var(--light-blue), #EBF5FB);
+  border: 1px solid var(--mid-gray);
+  border-radius: 4px;
+  padding: 18px 22px;
+  margin: 16px 0;
+}
+.warning-box {
+  background: #FEF9E7;
+  border-left: 5px solid var(--gold);
+  padding: 18px 22px;
+  margin: 16px 0;
+  color: #5D4037;
+}
+.warning-box strong { color: var(--dark-red); }
+
+/* ── Print ── */
+@media print {
+  .toc { position: static; }
+  .cover { min-height: auto; padding: 40px; }
+}
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-emblem">⚕</div>
+  <div class="cover-title-main">中华人民共和国<br>药品监督管理机构</div>
+  <div class="cover-title-sub">变革发展 · 职责演进 · 历任领导</div>
+  <div class="cover-divider"></div>
+  <div class="cover-desc">
+    本报告系统梳理中华人民共和国成立以来药品监督管理机构的沿革历程，<br>
+    详述各阶段机构职能、法制建设及历任领导人的从政经历与历史贡献，<br>
+    以期为研究中国药品监管体系提供翔实的文献参考。
+  </div>
+  <div class="cover-badge">综合研究报告（1949 — 2025）</div>
+</div>
+
+<!-- TOC -->
+<nav class="toc">
+  <div class="toc-inner">
+    <div class="toc-title">目　录</div>
+    <ul class="toc-links">
+      <li><a href="#ch1">第一章 绪论</a></li>
+      <li><a href="#ch2">第二章 机构沿革</a></li>
+      <li><a href="#ch3">第三章 职责演变</a></li>
+      <li><a href="#ch4">第四章 法制建设</a></li>
+      <li><a href="#ch5">第五章 历任领导</a></li>
+      <li><a href="#ch6">第六章 重大事件</a></li>
+      <li><a href="#ch7">第七章 现状展望</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- BODY -->
+<div class="container">
+
+<!-- ═══════════════ 第一章 ═══════════════ -->
+<div class="chapter" id="ch1">
+  <div class="chapter-header">
+    <div class="chapter-num">CHAPTER ONE</div>
+    <div class="chapter-title">第一章　绪论——中国药品监管的历史坐标</div>
+  </div>
+  <div class="section">
+    <p class="body">药品安全事关国计民生，药品监管制度的建立与完善是国家治理能力现代化的重要组成部分。中华人民共和国成立75年来，药品监督管理机构历经多次深刻变革，从新中国初期依附于卫生行政体系的简单管理，到改革开放后独立专业监管机构的逐步成形，再到21世纪以来大部制改革背景下的职能整合与深化，走过了一条从分散到集中、从行政审批到科学监管的历史演进之路。</p>
+    <p class="body">回顾这段历史，可以清晰地看到以下几条主线：其一，机构独立性不断增强，从卫生部内设司局逐步演变为国务院直属机构；其二，监管范围持续扩展，从单纯药品延伸至医疗器械、化妆品、保健品等多个领域；其三，法制基础日益健全，《药品管理法》数度修订，监管有法可依；其四，监管科学化水平持续提升，药品审评审批制度改革不断深化；其五，历任领导人在各自任期内承前启后，对中国药品监管事业作出了重要的历史贡献。</p>
+  </div>
+</div>
+
+<!-- ═══════════════ 第二章 ═══════════════ -->
+<div class="chapter" id="ch2">
+  <div class="chapter-header">
+    <div class="chapter-num">CHAPTER TWO</div>
+    <div class="chapter-title">第二章　机构沿革——从卫生部司局到国家药监局</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">一、建国初期的药政管理（1949—1977年）</div>
+    <p class="body">1949年中华人民共和国成立之初，百废待兴，医疗卫生体系亟需重建。彼时并无独立的药品监管机构，药政管理职能归属于中央人民政府卫生部。1950年，卫生部设立药政司，主要承担药品生产、供应及质量管理职责，是新中国最早的专门药品行政管理机构。</p>
+    <p class="body">这一时期药品管理的主要特征：</p>
+    <ul class="body-list">
+      <li>计划经济体制主导，药品生产和流通均纳入国家统一计划；</li>
+      <li>以供应保障为核心目标，质量监督相对薄弱；</li>
+      <li>缺乏系统的法律法规体系，主要依靠行政命令管理；</li>
+      <li>受苏联模式影响，强调国有企业主体地位；</li>
+      <li>1953年《中华人民共和国药典》第一版颁布，是新中国第一部国家药品标准；</li>
+      <li>1965年，国务院批准在北京成立中国药品生物制品检定所（后更名为中国食品药品检定研究院），标志着药品检验体系开始独立化建设。</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">二、改革开放与药政体系重建（1978—1997年）</div>
+    <p class="body">1978年改革开放之后，随着市场经济因素逐步引入，药品生产经营主体多元化，传统的计划体制药政管理面临严峻挑战。国务院于1984年颁布《中华人民共和国药品管理法》，这是新中国第一部药品大法，标志着中国药品监管进入法制化轨道。</p>
+    <p class="body">1988年，国务院机构改革，卫生部药政局升格为卫生部药政管理局，职能有所加强。然而，这一时期药品管理仍存在多头管理的问题：卫生部负责药品审批，国家医药管理局负责医药工业和商业管理，化工部负责原料药生产，各部门之间协调不畅，导致监管漏洞较多。1994年前后，国内出现多起重大药品质量事故，暴露出分散监管模式的严重弊端，社会各界要求建立统一专业药品监管机构的呼声日益高涨，为此后的机构改革奠定了社会基础。</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">三、国家药品监督管理局的建立（1998年）</div>
+    <p class="body">1998年是中国药品监管史上具有里程碑意义的年份。国务院决定在原国家医药管理局和卫生部药政局基础上，组建国家药品监督管理局（SDA），作为国务院直属机构，统一承担全国药品监督管理职责。这是中国历史上首次设立专门的独立药品监管机构，标志着中国药品监管体制的根本性变革。</p>
+    <p class="body">主要职能包括：负责药品研究、生产、流通、使用全链条监督；负责国家药品标准制定和修订；负责药品注册审批；负责医疗器械产品注册和监督管理；负责药品广告监督管理；开展国际交流与合作。</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">四、国家食品药品监督管理局（2003年）</div>
+    <p class="body">2003年，国务院机构改革进一步深化，在国家药品监督管理局基础上，整合食品安全综合协调职能，组建国家食品药品监督管理局（SFDA）。2003年非典疫情期间，SFDA在应急药品供应、疫苗监管等方面承担了大量特殊职能，经受了重大公共卫生危机的考验。</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">五、大部制改革：国家食品药品监督管理总局（2013年）</div>
+    <p class="body">2013年国务院实施新一轮大部制改革，将食品安全委员会办公室、国家食品药品监督管理局、国家质量监督检验检疫总局生产领域食品安全职责、工商行政管理总局流通领域食品安全职责整合，组建国家食品药品监督管理总局（CFDA），结束了长期以来食品安全"九龙治水"的局面。</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">六、国家药品监督管理局（2018年至今）</div>
+    <p class="body">2018年3月，国务院机构改革方案出台，组建国家市场监督管理总局。同时考虑到药品监管的高度专业性，单独重新组建国家药品监督管理局（NMPA），作为国家市场监督管理总局管理的国家局，专责药品、医疗器械和化妆品的全生命周期监管。</p>
+    <ul class="body-list">
+      <li>将食品监管与药品监管重新分开，使药品监管更加专业化；</li>
+      <li>突出药品监管的科学性要求，强调审评审批改革；</li>
+      <li>推进药品全生命周期管理理念，强化上市后监管；</li>
+      <li>建立省级药品监管机构的垂直指导关系；</li>
+      <li>推进与国际通行规则接轨，加入ICH。</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">机构沿革总览表</div>
+    <table class="timeline-table">
+      <thead>
+        <tr>
+          <th>时间节点</th>
+          <th>机构名称</th>
+          <th>隶属关系</th>
+          <th>主要特征</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1949—1953</td><td>卫生部药政处</td><td>中央人民政府卫生部</td><td>药品行政管理起步</td></tr>
+        <tr><td>1954—1977</td><td>卫生部药政局</td><td>国务院卫生部</td><td>药政与生产并管</td></tr>
+        <tr><td>1978—1987</td><td>卫生部药政局</td><td>国务院卫生部</td><td>引入GMP概念</td></tr>
+        <tr><td>1988—1997</td><td>卫生部药政管理局</td><td>国务院卫生部</td><td>职能扩大，局级设置</td></tr>
+        <tr><td>1998—2002</td><td>国家药品监督管理局（SDA）</td><td>国务院直属机构</td><td>独立专业监管机构诞生</td></tr>
+        <tr><td>2003—2012</td><td>国家食品药品监督管理局（SFDA）</td><td>国务院直属机构</td><td>增加食品安全协调职能</td></tr>
+        <tr><td>2013—2017</td><td>国家食品药品监督管理总局（CFDA）</td><td>国务院直属机构</td><td>大部制整合食品全链条</td></tr>
+        <tr><td>2018—至今</td><td>国家药品监督管理局（NMPA）</td><td>国家市场监督管理总局管理</td><td>专业化回归，审评改革深化</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════════ 第三章 ═══════════════ -->
+<div class="chapter" id="ch3">
+  <div class="chapter-header">
+    <div class="chapter-num">CHAPTER THREE</div>
+    <div class="chapter-title">第三章　职责职能的历史演变</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">一、药品审评审批职能的演变</div>
+    <p class="body">药品审评审批是药品监管的核心职能。1985年《药品管理法》实施初期，审批权分散在卫生部药政局和各省级卫生部门。国家药品监督管理局成立后，逐步上收审批权限，建立统一国家标准体系。1999年，药品审评中心（CDE）正式独立运作，实现行政审批与技术审评分离。2015年前后，积压审评问题严重，一度积压达22000件，国家启动大规模审评制度改革：</p>
+    <ul class="body-list">
+      <li>2015年11月，国务院发布《关于改革药品医疗器械审评审批制度的意见》；</li>
+      <li>2017年，加入ICH，对标国际标准；</li>
+      <li>建立优先审评、附条件批准、突破性治疗药物等快速通道；</li>
+      <li>临床试验由"审批制"改为"默示许可制"，大幅提速；</li>
+      <li>2020年后，新冠疫情期间药品和疫苗紧急使用授权机制得到充分运用。</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">二、药品安全监管职能的演变</div>
+    <p class="body">药品安全事件是推动监管职能强化的直接动力。从"齐二药"假药事件（2006年）、"欣弗"注射液不良事件（2006年），到"长生生物"疫苗造假事件（2018年），每一次重大事件都推动了监管体制的深化改革。</p>
+    <ul class="body-list">
+      <li>建立药品不良反应（ADR）报告与监测制度，覆盖全国所有二级以上医院；</li>
+      <li>推行药品全生命周期管理，上市前与上市后监管一体化；</li>
+      <li>建立药品追溯体系，实现药品来源可溯、去向可查；</li>
+      <li>推行"最严谨的标准、最严格的监管、最严厉的处罚、最严肃的问责"的"四个最严"原则。</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">三、医疗器械监管职能的发展</div>
+    <p class="body">医疗器械监管最初由卫生部与机械工业部门共同管理。1998年整合至药品监管机构后，2000年《医疗器械监督管理条例》颁布，首次确立按风险分类管理制度（一、二、三类），2014年、2021年两次修订进一步强化了高风险医疗器械的上市前审评和上市后监管要求。</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">四、化妆品与中药监管的发展</div>
+    <p class="body">2020年《化妆品监督管理条例》颁布实施，建立注册备案分类管理制度，全面提升化妆品监管水平。中药监管方面，2019年《中医药法》实施后，对古代经典名方、医疗机构中药制剂等实行特殊管理，构建符合中药特点的审评审批专属体系。</p>
+  </div>
+</div>
+
+<!-- ═══════════════ 第四章 ═══════════════ -->
+<div class="chapter" id="ch4">
+  <div class="chapter-header">
+    <div class="chapter-num">CHAPTER FOUR</div>
+    <div class="chapter-title">第四章　法制体系建设历程</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">一、《药品管理法》的立法与修订历程</div>
+    <div class="event-card">
+      <div class="event-title">1984年版（首次立法）</div>
+      <p class="body" style="margin:0">1984年9月20日第六届全国人大常委会审议通过，1985年7月1日施行。这是新中国历史上第一部专门规范药品活动的法律，确立了药品生产许可证、药品经营许可证、药品审批等基本制度。</p>
+    </div>
+    <div class="event-card green">
+      <div class="event-title">2001年第一次全面修订</div>
+      <p class="body" style="margin:0">全面修订，将GMP认证、GSP认证以及假劣药认定标准等写入法律，重大变化包括确立GMP认证制度、强化假劣药品的法律责任、完善药品广告管理等。</p>
+    </div>
+    <div class="event-card gold">
+      <div class="event-title">2019年第二次全面修订（历史性修订）</div>
+      <p class="body" style="margin:0">共10章144条，核心创新包括：上市许可持有人（MAH）制度、优先审评审批制度、附条件批准制度、突破性治疗药物制度、关联审评审批制度、药品追溯制度等。2019年12月1日起施行。</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">二、主要配套法规体系</div>
+    <ul class="body-list">
+      <li>《药品注册管理办法》（2002年、2007年、2020年三次修订）</li>
+      <li>《药品生产监督管理办法》（2004年、2020年修订）</li>
+      <li>《药品经营质量管理规范》（GSP）及《药品经营许可证管理办法》</li>
+      <li>《药品不良反应报告和监测管理办法》</li>
+      <li>《医疗器械监督管理条例》（2000年、2014年、2021年修订）</li>
+      <li>《化妆品监督管理条例》（2020年）</li>
+      <li>《疫苗管理法》（2019年，全球首部专门疫苗法律）</li>
+      <li>《中医药法》（2016年）及中药注册管理补充规定</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">三、中国加入ICH的里程碑意义</div>
+    <div class="highlight-box">
+      <p class="body" style="margin:0"><strong>2017年6月</strong>，中国国家食品药品监督管理总局正式加入国际人用药品注册技术协调会（ICH），成为ICH管理委员会成员。这是中国药品监管国际化进程中的里程碑事件，意味着中国承诺逐步采纳ICH技术指南，与全球主要药品监管体系接轨，有助于中国创新药走向国际市场，也有助于国际创新药更快进入中国。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ 第五章 ═══════════════ -->
+<div class="chapter" id="ch5">
+  <div class="chapter-header">
+    <div class="chapter-num">CHAPTER FIVE</div>
+    <div class="chapter-title">第五章　历任主要领导人详传</div>
+  </div>
+  <p class="body" style="margin-top:24px">以下按照机构历史沿革顺序，详细记述历任主要领导人的个人背景、从政经历及历史贡献。因1998年以前药政管理归属卫生部，本章首先记录卫生部主管药政的代表性领导人，再依次详述历任药品监管机构负责人。</p>
+
+  <!-- ── 卫生部时期 ── -->
+  <div class="section">
+    <div class="section-title">一、卫生部药政时期主要领导（1949—1997年）</div>
+    <p class="body">建国初期，卫生部药政局工作由历届卫生部长、副部长兼管。以下按时间顺序梳理在药政管理上作出重要贡献的卫生部领导人：</p>
+    <ul class="body-list">
+      <li><strong>傅连暲（1950—1960年任卫生部副部长）：</strong>红军长征期间曾任中央红军卫生部部长，对奠定新中国药品卫生管理体制发挥了重要作用，主持新中国药政局最初建制工作。</li>
+      <li><strong>崔义田（1952—1965年任卫生部副部长）：</strong>主持制定了新中国最早的药品质量标准和《中华人民共和国药典》（1953年版，第一版），奠定了国家药品标准体系的基础。</li>
+      <li><strong>钱信忠（两度任卫生部部长：1956—1966年、1979—1982年）：</strong>在两次任期内推动药品管理制度建设，主持推动中国第一批GMP概念的引入和药品生产标准化工作。</li>
+      <li><strong>黄树则（1965—1978年任卫生部部长）：</strong>文革期间主管全国卫生工作，为维护药品供应基本秩序、防止药品管理体系完全崩溃作出贡献。</li>
+      <li><strong>江一真（1979—1982年任卫生部部长）：</strong>改革开放后主导恢复药政管理秩序，推动1982年《中华人民共和国药典》修订工作，重建药品标准体系。</li>
+      <li><strong>崔月犁（1982—1987年任卫生部部长）：</strong>主持推动1984年《药品管理法》立法，是第一部药品大法的最主要推动者，历史贡献极为重要。</li>
+      <li><strong>陈敏章（1987—1998年任卫生部部长）：</strong>任期内主持1992年版、1995年版《药典》修订，为国家药品监督管理局独立建局作了制度铺垫和组织准备。</li>
+    </ul>
+  </div>
+
+  <!-- ── 郑筱萸 ── -->
+  <div class="section">
+    <div class="section-title">二、国家药品监督管理局局长（1998—2003年）</div>
+    <div class="leader-card">
+      <div class="leader-card-header">
+        <div class="leader-card-name">郑筱萸</div>
+      </div>
+      <div class="leader-card-body">
+        <div class="leader-row">
+          <div class="leader-label">任职期间</div>
+          <div class="leader-value term">1998年3月 — 2005年6月<br><small>国家药品监督管理局局长（1998—2003）；国家食品药品监督管理局局长（2003—2005）</small></div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label">出生年份</div>
+          <div class="leader-value">1944年出生，福建福州人</div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label">教育背景</div>
+          <div class="leader-value">毕业于北京中医学院（今北京中医药大学），后在职获医学相关学位</div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label career-lbl">从政经历</div>
+          <div class="leader-value career-val">
+            1968—1978年：福建省医疗机构工作，从事临床实践<br>
+            1978—1985年：福建省卫生厅任职，历任科长、处长<br>
+            1985—1994年：福建省卫生厅副厅长<br>
+            1994—1998年：国家医药管理局副局长<br>
+            1998年3月：出任国家药品监督管理局首任局长<br>
+            2005年6月：因受贿被调查，接受中央纪律检查委员会审查<br>
+            2007年5月：以受贿罪被判处死刑；2007年7月10日执行
+          </div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label contrib-lbl">主要贡献</div>
+          <div class="leader-value contrib-val">
+            <ul>
+              <li>主持国家药品监督管理局建局工作，初步建立独立药品监管行政框架</li>
+              <li>推动《药品管理法》2001年全面修订，完善药品法律体系</li>
+              <li>推动建立药品不良反应监测制度基础框架</li>
+              <li>组织开展GMP认证推广工作（早期阶段）</li>
+              <li>推动省级仿制药标准统一，启动"地标升国标"工作</li>
+            </ul>
+          </div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label note-lbl">综合评价</div>
+          <div class="leader-value note-val">
+            <strong>【重大警示】</strong>郑筱萸在任期间大量收受医药企业贿赂，为不符合条件的药品批准上市，直接导致大量假冒低质药品流入市场，造成严重公众健康危害。其案件是新中国成立以来药品监管领域最重大腐败案，深刻暴露药品审批制度漏洞，直接触发2007年全国药品审批制度大整改。郑筱萸案已成为中国药品监管史上最沉痛的历史教训，也是推动后续制度改革的重要反面动力。
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 邵明立 ── -->
+  <div class="section">
+    <div class="section-title">三、国家食品药品监督管理局（SFDA）局长</div>
+    <div class="leader-card">
+      <div class="leader-card-header">
+        <div class="leader-card-name">邵明立</div>
+      </div>
+      <div class="leader-card-body">
+        <div class="leader-row">
+          <div class="leader-label">任职期间</div>
+          <div class="leader-value term">2005年7月 — 2008年3月</div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label">出生年份</div>
+          <div class="leader-value">1950年出生，山东人</div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label">教育背景</div>
+          <div class="leader-value">北京大学哲学系毕业，法学学士；后取得医药卫生管理相关学历</div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label career-lbl">从政经历</div>
+          <div class="leader-value career-val">
+            1978年后历任山东省委机关干部、山东省卫生厅职务<br>
+            1990年代：历任卫生部药政局副局长<br>
+            1998年：国家药品监督管理局副局长<br>
+            2005年7月：郑筱萸落马后，出任国家食品药品监督管理局局长<br>
+            2008年3月：卸任，后退休
+          </div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label contrib-lbl">主要贡献</div>
+          <div class="leader-value contrib-val">
+            <ul>
+              <li>接替郑筱萸主持局务，主导开展大规模药品审批清理整顿</li>
+              <li>推动"地标升国标"历史遗留问题专项清查，大幅压缩不合格批文</li>
+              <li>主导2007年《药品注册管理办法》修订，强化技术审评独立性</li>
+              <li>对药品审评中心进行整顿，加强审评队伍廉政建设</li>
+              <li>在"欣弗"注射液事件（2006年）等应急处置中有效保障了公众安全</li>
+              <li>主导建立药品电子监管码制度（早期阶段）</li>
+            </ul>
+          </div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label note-lbl">综合评价</div>
+          <div class="leader-value note-val">邵明立在极为困难的历史条件下接掌药监系统，以较强的危机处置能力和廉政建设决心为中国药品监管体系重建公信力，历史评价总体正面。其最大历史贡献在于在郑筱萸腐败案冲击下稳住了监管秩序，并推动了药品审批制度的系统整改。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="leader-card" style="margin-top:32px">
+      <div class="leader-card-header">
+        <div class="leader-card-name">张勇</div>
+      </div>
+      <div class="leader-card-body">
+        <div class="leader-row">
+          <div class="leader-label">任职期间</div>
+          <div class="leader-value term">2008年4月 — 2013年3月</div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label">出生年份</div>
+          <div class="leader-value">1956年出生，北京人</div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label">教育背景</div>
+          <div class="leader-value">北京工业大学毕业，工学背景；后取得管理学相关学历，高级工程师</div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label career-lbl">从政经历</div>
+          <div class="leader-value career-val">
+            历任国家经济贸易委员会、国家发展和改革委员会相关职务<br>
+            国家质量监督检验检疫总局相关副职<br>
+            2008年4月：出任国家食品药品监督管理局局长<br>
+            2013年3月机构改革后调整职务
+          </div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label contrib-lbl">主要贡献</div>
+          <div class="leader-value contrib-val">
+            <ul>
+              <li>推进GMP认证从"推荐性"向"强制性"升级，主导2010年版GMP实施</li>
+              <li>推动完善药品不良反应（ADR）监测和评价体系</li>
+              <li>推进药品电子监管码全面推广工作</li>
+              <li>任期内协调处理重大药品安全事件（如2008年三聚氰胺奶粉事件食药联动应对）</li>
+              <li>推动药品监管国际交流，加强与FDA、EMA等国际机构合作</li>
+            </ul>
+          </div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label note-lbl">综合评价</div>
+          <div class="leader-value note-val">张勇任内是中国药品监管专业化建设的重要阶段，2010年版GMP全面升级是其任期内最重要的制度成就，使中国药品生产质量管理标准达到国际先进水平。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CFDA ── -->
+  <div class="section">
+    <div class="section-title">四、国家食品药品监督管理总局（CFDA）局长</div>
+
+    <div class="leader-card">
+      <div class="leader-card-header">
+        <div class="leader-card-name">毕井泉</div>
+      </div>
+      <div class="leader-card-body">
+        <div class="leader-row">
+          <div class="leader-label">任职期间</div>
+          <div class="leader-value term">2015年4月 — 2018年3月（CFDA局长）</div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label">出生年份</div>
+          <div class="leader-value">1956年出生，北京人</div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label">教育背景</div>
+          <div class="leader-value">北京大学经济系毕业，经济学学士；后取得经济学研究生学历，研究员级职称</div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label career-lbl">从政经历</div>
+          <div class="leader-value career-val">
+            1982年北京大学毕业后入国家计划委员会工作<br>
+            历任国家发展计划委员会（后改为国家发展和改革委员会）各级职务<br>
+            长期主管价格、医疗等宏观政策领域<br>
+            2008—2015年：国家发展和改革委员会副主任，主管价格、医药等工作<br>
+            2015年4月：出任国家食品药品监督管理总局局长<br>
+            2018年机构改革后，调任全国政协委员<br>
+            退休后仍活跃于医药产业政策研究领域
+          </div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label contrib-lbl">主要贡献</div>
+          <div class="leader-value contrib-val">
+            <ul>
+              <li>主导启动中国药品审评审批制度历史性改革（2015年），被业界称为"毕井泉改革"</li>
+              <li>推动出台国务院《关于改革药品医疗器械审评审批制度的意见》（国发〔2015〕44号）</li>
+              <li>推动仿制药质量和疗效一致性评价政策落地，开创仿制药监管新时代</li>
+              <li>主导中国加入ICH（2017年），实现药品监管国际化里程碑</li>
+              <li>清除审评积压，从22000件压缩至历史正常水平</li>
+              <li>建立优先审评制度，大量创新药开始快速上市</li>
+              <li>推动临床试验数据核查，严打数据造假，全国临床试验自查核查震动行业</li>
+              <li>大幅扩充药品审评中心（CDE）专业人员，引进大量海外归国专家</li>
+              <li>推动药品上市许可持有人（MAH）制度的立法进程</li>
+              <li>推动建立药品审评沟通交流机制，提升审评透明度</li>
+            </ul>
+          </div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label note-lbl">综合评价</div>
+          <div class="leader-value note-val">毕井泉是中国药品监管改革史上评价最高的领导人之一，其任期内的系列改革被普遍认为是中国药品监管史上最重要的变革节点，奠定了此后中国创新药爆发式增长的监管制度基础。他以经济学家视野推动监管改革，强调用改革创新解决审评积压等历史难题，在医药产业界享有极高声誉。业界普遍认为，毕井泉改革开启了中国从仿制药大国向创新药国家迈进的历史进程。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── NMPA ── -->
+  <div class="section">
+    <div class="section-title">五、国家药品监督管理局（NMPA）局长（2018年至今）</div>
+
+    <div class="leader-card">
+      <div class="leader-card-header">
+        <div class="leader-card-name">焦　红</div>
+      </div>
+      <div class="leader-card-body">
+        <div class="leader-row">
+          <div class="leader-label">任职期间</div>
+          <div class="leader-value term">2018年4月 — 2023年3月（NMPA首任局长）</div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label">出生年份</div>
+          <div class="leader-value">1963年出生，内蒙古人</div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label">教育背景</div>
+          <div class="leader-value">毕业于内蒙古医科大学（原内蒙古医学院），医学学士；后在职取得卫生管理相关学历，研究员级职称</div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label career-lbl">从政经历</div>
+          <div class="leader-value career-val">
+            1985年大学毕业后在内蒙古自治区卫生系统工作，历任至副厅长<br>
+            2000年代：调入国家食品药品监督管理局，历任司局级职务<br>
+            曾任食品安全监管司、药品化妆品注册管理司等司长<br>
+            2013年前后：历任国家食品药品监督管理总局副局长<br>
+            2018年4月：出任新组建的国家药品监督管理局首任局长<br>
+            2023年3月：届满卸任，调任全国政协委员
+          </div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label contrib-lbl">主要贡献</div>
+          <div class="leader-value contrib-val">
+            <ul>
+              <li>主持新组建的国家药品监督管理局建局工作，确立NMPA机构架构与运行机制</li>
+              <li>推动《药品管理法》2019年全面修订工作，领衔完成历史性立法任务</li>
+              <li>推动《疫苗管理法》（2019年）立法——全球首部专门针对疫苗管理的国家法律</li>
+              <li>主导《医疗器械监督管理条例》2021年修订，全面提升医疗器械监管水平</li>
+              <li>推动《化妆品监督管理条例》（2020年）颁布实施</li>
+              <li>统筹应对新冠疫情期间药品和疫苗监管，建立紧急使用授权机制</li>
+              <li>推动国产新冠疫苗快速上市，为全国抗疫提供产品保障</li>
+              <li>推动药品上市许可持有人（MAH）制度全面落地</li>
+              <li>完善药品信息化追溯体系，实现药品全链条溯源</li>
+              <li>主导药品监管科学行动计划，推动监管工具现代化</li>
+            </ul>
+          </div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label note-lbl">综合评价</div>
+          <div class="leader-value note-val">焦红是首位担任国家药品监督管理局（NMPA）局长的女性领导人，也是中国药品监管史上为数不多的具有深厚医学专业背景的最高负责人。其任期跨越机构改革期和新冠疫情期，在极为复杂的历史条件下领导NMPA完成多项立法奠基工作，尤其是同年完成《药品管理法》和《疫苗管理法》两部重要法律，历史贡献极为重要。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="leader-card" style="margin-top:32px">
+      <div class="leader-card-header">
+        <div class="leader-card-name">李　利</div>
+      </div>
+      <div class="leader-card-body">
+        <div class="leader-row">
+          <div class="leader-label">任职期间</div>
+          <div class="leader-value term">2023年3月 — 至今（2025年）</div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label">出生年份</div>
+          <div class="leader-value">1966年出生，湖南人</div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label">教育背景</div>
+          <div class="leader-value">毕业于中南大学（原中南工业大学），理工科背景；后取得工商管理及法律相关学历</div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label career-lbl">从政经历</div>
+          <div class="leader-value career-val">
+            1988年参加工作，早期在湖南省地方机关任职<br>
+            历任湖南省各级行政机关职务<br>
+            调入中央机关，任国家市场监督管理总局相关副局长职务<br>
+            2023年3月：出任国家药品监督管理局局长，任期至今（2025年）
+          </div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label contrib-lbl">主要工作方向</div>
+          <div class="leader-value contrib-val">
+            <ul>
+              <li>持续深化药品审评审批改革，推动创新药审评提速增效</li>
+              <li>强化药品全生命周期监管体系建设</li>
+              <li>加强药品监管科学研究和监管工具现代化建设</li>
+              <li>深化与国际药品监管机构合作，提升NMPA国际影响力</li>
+              <li>部署药品安全专项整治，严打药品违法违规行为</li>
+              <li>持续推动中药传承创新发展与科学监管相结合</li>
+            </ul>
+          </div>
+        </div>
+        <div class="leader-row">
+          <div class="leader-label note-lbl">综合评价</div>
+          <div class="leader-value note-val">李利任期至本报告截止日（2025年）仍在进行中，以上仅为任期内主要工作方向，历史评价有待时间检验。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ 第六章 ═══════════════ -->
+<div class="chapter" id="ch6">
+  <div class="chapter-header">
+    <div class="chapter-num">CHAPTER SIX</div>
+    <div class="chapter-title">第六章　重大历史事件与制度影响</div>
+  </div>
+
+  <div class="section">
+    <div class="event-card">
+      <div class="event-title">一、1985年《药品管理法》施行——法制化起点</div>
+      <p class="body" style="margin:0">1985年施行的《药品管理法》是新中国药品监管法制化的起点，确立了药品生产许可证、药品审批制度等基本框架，结束了长期依靠行政命令管理药品的历史。在崔月犁部长领导下完成立法，推动了中国药品监管从无序走向有序。</p>
+    </div>
+
+    <div class="event-card">
+      <div class="event-title">二、1998年国家药品监督管理局成立——监管独立化</div>
+      <p class="body" style="margin:0">国家药品监督管理局（SDA）的成立，是中国药品监管史上最重要的机构性变革，标志着药品监管从卫生行政附属职能提升为独立的国家专业监管机构，为此后二十余年的专业化监管体系建设奠定了制度基础。</p>
+    </div>
+
+    <div class="event-card red">
+      <div class="event-title">三、2006—2007年郑筱萸案——最深刻的历史警示</div>
+      <p class="body" style="margin:0">郑筱萸案是中国药品监管史上影响最深远的负面事件。其腐败行为导致大量不合格药品被批准上市，严重危害公众健康。案件曝光后，国家启动大规模清理整改，从制度设计层面全面检视并弥补了药品审批中的权力漏洞。这一事件警示后人：药品审批权力必须在严格的制度框架内运行。</p>
+    </div>
+
+    <div class="event-card gold">
+      <div class="event-title">四、2015年审评审批制度改革——历史性转折</div>
+      <p class="body" style="margin:0">以国发〔2015〕44号文件为标志，毕井泉局长主导的这场改革是中国药品监管最重要的历史转折。改革解决了困扰中国医药产业多年的审评积压问题，建立了与国际接轨的药品审评标准，极大激励了创新药研发，推动了中国从仿制药大国向创新药国家迈进。</p>
+    </div>
+
+    <div class="event-card green">
+      <div class="event-title">五、2017年加入ICH——国际化里程碑</div>
+      <p class="body" style="margin:0">中国加入ICH，意味着中国承诺逐步采纳ICH技术指南，与全球主要药品监管体系接轨，有助于中国创新药走向国际市场，也有助于国际创新药更快进入中国，实现了监管标准的双向开放。</p>
+    </div>
+
+    <div class="event-card red">
+      <div class="event-title">六、2018年"长生生物"疫苗事件——疫苗专门立法的直接推手</div>
+      <p class="body" style="margin:0">2018年，长春长生生物科技公司被曝光违规生产百白破疫苗并伪造狂犬病疫苗生产数据，引发全国性公众恐慌。事件直接推动了《疫苗管理法》的立法进程。2019年《疫苗管理法》正式颁布，中国成为全球首个为疫苗专门立法的国家。</p>
+    </div>
+
+    <div class="event-card gold">
+      <div class="event-title">七、2019年立法高峰——新时代法制体系的核心支柱</div>
+      <p class="body" style="margin:0">2019年同年颁布《药品管理法》（全面修订）和《疫苗管理法》两部重要法律，是中国药品监管法制建设的高峰之年。新《药品管理法》确立了药品上市许可持有人制度，《疫苗管理法》确立了疫苗全链条国家管控体系，共同构成中国现代药品监管法律体系的核心支柱。</p>
+    </div>
+
+    <div class="event-card green">
+      <div class="event-title">八、新冠疫情（2020—2023年）——应急监管体系的重大考验</div>
+      <p class="body" style="margin:0">新冠疫情期间，NMPA承担了抗疫药品、体外诊断试剂、疫苗等产品的应急审评审批工作，建立了紧急使用授权（EUA）机制，推动国产新冠疫苗在极短时间内完成临床研究和上市审批，为全国抗疫工作提供了重要的产品供应保障。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ 第七章 ═══════════════ -->
+<div class="chapter" id="ch7">
+  <div class="chapter-header">
+    <div class="chapter-num">CHAPTER SEVEN</div>
+    <div class="chapter-title">第七章　当前监管格局与未来展望</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">一、NMPA现行组织架构（2025年）</div>
+    <p class="body">国家药品监督管理局下设综合和规划财务司、法规司、药品注册管理司、药品监督管理司、医疗器械注册管理司、医疗器械监督管理司、化妆品监督管理司、科技和国际合作司等内设机构。</p>
+    <p class="body">直属技术机构主要包括：中国食品药品检定研究院（NIFDC）、国家药品审评中心（CDE）、国家医疗器械技术审评中心（CMDE）、药物警戒中心、国家化妆品技术审评中心、中国食品药品国际交流中心等。</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">二、主要成就</div>
+    <ul class="body-list">
+      <li><strong>法律法规体系：</strong>形成以《药品管理法》《疫苗管理法》《医疗器械监督管理条例》《化妆品监督管理条例》为核心的四大支柱法律体系；</li>
+      <li><strong>审评能力建设：</strong>CDE专业技术人员从2015年约600人扩充至2024年2000人以上，创新药审评周期从数年压缩至12个月以内；</li>
+      <li><strong>一致性评价：</strong>仿制药质量和疗效一致性评价深入推进，大量仿制药质量得到提升；</li>
+      <li><strong>创新药上市：</strong>中国已成为全球重要的创新药市场，国产创新药上市数量逐年攀升；</li>
+      <li><strong>国际合作：</strong>与美国FDA、欧洲EMA、日本PMDA等建立常态化交流合作机制；</li>
+      <li><strong>数字化监管：</strong>药品电子追溯体系基本建成，大数据和人工智能在监管风险评估中逐步应用。</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">三、主要挑战与未来发展方向</div>
+    <ul class="body-list">
+      <li>审评能力仍需提升：随着创新药申报数量快速增加，审评队伍数量和质量仍需扩充；</li>
+      <li>监管科学建设：面对细胞治疗、基因治疗、AI辅助药物研发等新技术，监管工具和评价方法亟需升级；</li>
+      <li>上市后监管：与国际先进机构相比，中国上市后药品监测评价体系仍有较大提升空间；</li>
+      <li>中药监管特殊路径：如何在科学监管框架内建立适合中药特点的评价标准，仍是重大挑战；</li>
+      <li>国际互认推进：推动与主要国家和地区的药品监管互认，降低中国医药产品的全球准入壁垒；</li>
+      <li>基层监管力量：省市县三级药品监管能力建设仍需大力加强。</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══════════════ 结语 ═══════════════ -->
+<div class="chapter" id="conclusion">
+  <div class="chapter-header" style="background:linear-gradient(135deg, var(--navy), #0D2137)">
+    <div class="chapter-num">CONCLUSION</div>
+    <div class="chapter-title">结　语</div>
+  </div>
+  <div class="section">
+    <p class="body">中国药品监督管理机构走过了七十余年的历史长河，从简陋的药政处室到拥有完整专业体系的国家药品监督管理局，从依附性的行政管理到独立的科学监管，每一步都凝聚着几代药监人的心血，也深刻镌刻着中国社会变迁的历史印记。</p>
+    <p class="body">回望历史，郑筱萸案件的沉痛教训警示我们：监管权力必须在制度的笼子里运行，人民健康不容任何形式的腐败侵蚀。而毕井泉时代的系统性改革和焦红时代的立法高峰，则展示了制度力量和改革勇气能够为公众健康护航的正向力量。</p>
+    <p class="body">展望未来，随着中国从医药大国迈向医药强国的历史征程加速，国家药品监督管理局将在更高水平的监管科学建设、更深度的国际协调合作、更完善的全生命周期管理等方面持续探索前行。历史给予的最宝贵启示是：<strong>严格、专业、廉洁、创新</strong>，是中国药品监管事业永远不变的核心价值。</p>
+  </div>
+</div>
+
+</div><!-- /container -->
+
+<div class="footer">
+  <strong>中华人民共和国药品监督管理机构变革发展综合研究报告</strong><br>
+  1949 — 2025 &nbsp;|&nbsp; 涵盖机构沿革 · 职责演变 · 法制建设 · 历任领导<br>
+  <span style="opacity:0.5; font-size:12px">本报告基于公开资料整理，供研究参考之用</span>
+</div>
+
+<script>
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const el = document.querySelector(a.getAttribute('href'));
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+</script>
+</body>
+</html>
